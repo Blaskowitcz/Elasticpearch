@@ -1,0 +1,19 @@
+# Secrets & Environment
+.env
+docker-compose.yml
+
+# Python / Backend
+__pycache__/
+er_env/
+*.pyc
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+
+# Media / Data
+*.wav
+*.m4a
+*.jpg
+*.png
