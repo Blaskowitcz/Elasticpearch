@@ -1,3 +1,11 @@
+# POC
+
+https://vimeo.com/1168920102?fl=ip&fe=ec
+
+# Write-up
+
+https://medium.com/p/d8ebc9dd06ac
+
 # Data Processing API & Elasticsearch Stack
 
 This project provides a FastAPI-based backend that accepts audio or image files, extracts text using GPU-accelerated machine learning models (Whisper and Docling), and pushes the extracted data into a local Elasticsearch and Kibana stack.
@@ -43,16 +51,24 @@ docker-compose up -d
 ```
 
 ## Install Python Dependencies
-
+```
 python -m venv venv
+```
+```
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+```
 pip install fastapi uvicorn python-multipart faster-whisper docling elasticsearch torch
-
+```
 ## Run the API Server
-
+```
 python3 -m venv project_env
+```
+```
 source er_env/bin/activate
+```
+```
 uvicorn main:app --host 0.0.0.0 --port 8000
-
+```
 
 
